@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+body {
+  background: #1a1a1a;
+  display: flex;
+  min-height: 100vh;
+  place-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+.form, .thanks, .container, .image, .header, .text, .button {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 400px;
+  background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+  padding: 2em;
+  border-radius: 25px;
+}
+
+.form .image {
+  width: 45px;
+  padding: 1em;
+  background: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.header {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.text {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5em;
+}
+
+.rating {
+  margin: 2em 0;
+}
+.rating ul {
+  display: flex;
+  justify-content: space-between;
+}
+.rating li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  border-radius: 50%;
+  padding: 1em;
+}
+.rating li:hover {
+  cursor: pointer;
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.rating .active {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.thanks .image {
+  width: 160px;
+  margin: auto;
+  padding: 1em 0 2em;
+}
+.thanks .selected {
+  display: flex;
+  flex-direction: column;
+  background: hsl(213, 19%, 18%);
+  border-radius: 30px;
+  color: hsl(25, 97%, 53%);
+  align-self: center;
+  padding: 0.5em 1em;
+}
+.thanks .header {
+  text-align: center;
+  margin-top: 2em;
+}
+.thanks .text {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.clear {
+  display: none;
+}
+
+.btn {
+  width: 100%;
+  letter-spacing: 1px;
+  background: hsl(25, 97%, 53%);
+  text-align: center;
+  padding: 0.9em;
+  border-radius: 30px;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.btn:active {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}/*# sourceMappingURL=main.css.map */
